@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>YYModel | Name'65</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">YYModel</h1><a id="logo" href="/.">Name'65</a><p class="description">格物致知</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">YYModel</h1><div class="post-meta">May 12, 2017<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><h3 id="YYModel"><a href="#YYModel" class="headerlink" title="YYModel"></a>YYModel</h3><ul>
+<li><p>Github：<a href="https://github.com/ibireme/YYModel" target="_blank" rel="external">YYModel</a></p>
+</li>
+<li><p>作者： <a href="http://blog.ibireme.com/" target="_blank" rel="external">ibireme</a></p>
+</li>
+<li><p>功能：高性能的 iOS JSON 模型框架，将JSON格式数据自动映射成Model</p>
+</li>
+</ul>
+<p>​<a id="more"></a></p>
+<h3 id="YYModel_u7684_u7279_u6027"><a href="#YYModel_u7684_u7279_u6027" class="headerlink" title="YYModel的特性"></a>YYModel的特性</h3><ul>
+<li><strong>高性能</strong>: 模型转换性能接近手写解析代码。</li>
+<li><strong>自动类型转换</strong>: 对象类型可以自动转换。</li>
+<li><strong>类型安全</strong>: 转换过程中，所有的数据类型都会被检测一遍，以保证类型安全，避免崩溃问题。</li>
+<li><strong>无侵入性</strong>: 使用Category，模型无需继承自其他基类。</li>
+<li><strong>轻量</strong>: 该框架只有 5 个文件 (包括.h文件)。</li>
+<li><strong>文档和单元测试</strong>: 文档覆盖率100%, 代码覆盖率99.6%。</li>
+</ul>
+<h3 id="u4E3B_u6D41Model_u5E93_u6027_u80FD_u5BF9_u6BD4"><a href="#u4E3B_u6D41Model_u5E93_u6027_u80FD_u5BF9_u6BD4" class="headerlink" title="主流Model库性能对比"></a>主流Model库性能对比</h3><table>
+<thead>
+<tr>
+<th></th>
+<th>性能</th>
+<th>容错性</th>
+<th>功能</th>
+<th>侵入性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mantle</strong></td>
+<td>E</td>
+<td>B 会进行对象类型检查</td>
+<td>A 可定制性最高</td>
+<td>B 需要 Model 继承自某个基类，灵活性稍差，但功能丰富</td>
+</tr>
+<tr>
+<td><strong>JSONModel</strong></td>
+<td>C 和 MJExtension 差不多，Mantle 性能高</td>
+<td>D 没有对错误类型的检测，没有对 App 的保护</td>
+<td>B 使用比较简单，但功能相对 Mantle 稍弱</td>
+<td>B 需要 Model 继承自某个基类，灵活性稍差，但功能丰富</td>
+</tr>
+<tr>
+<td><strong>MJExtension</strong></td>
+<td>C 和JSONModel 差不多，Mantle 性能高</td>
+<td>C 对部分对象进行自动转换</td>
+<td>B 使用比较简单，但功能相对 Mantle 稍弱</td>
+<td>A- Category 方式来实现,添加了一些没有前缀的方法，易引起冲突</td>
+</tr>
+<tr>
+<td><strong>FastEasyMapping</strong></td>
+<td>B 较快</td>
+<td>E 没有自动转换的机制</td>
+<td>C 功能最少，使用也不算方便</td>
+<td>C 采用工具类来实现，使用灵活，但不方便</td>
+</tr>
+<tr>
+<td><strong>YYModel</strong></td>
+<td>A 快，接近手写代码的效率</td>
+<td>A 会进行对象类型检查</td>
+<td>B 使用比较简单，但功能相对 Mantle 稍弱</td>
+<td>A Category 方式来实现</td>
+</tr>
+</tbody>
+</table>
+<h3 id="YYModel_u6027_u80FD_u662F_u5982_u4F55_u63D0_u5347_u7684_uFF1F"><a href="#YYModel_u6027_u80FD_u662F_u5982_u4F55_u63D0_u5347_u7684_uFF1F" class="headerlink" title="YYModel性能是如何提升的？"></a>YYModel性能是如何提升的？</h3><ol>
+<li><p>缓存</p>
+<p>Model JSON 转换过程中需要很多类的元数据，如果数据足够小，则全部缓存到内存中。</p>
+</li>
+<li><p>查表</p>
+<p>当遇到多项选择的条件时，要尽量使用查表法实现，比如 switch/case，C Array，如果查表条件是对象，则可以用 NSDictionary 来实现。</p>
+</li>
+<li><p>避免 KVC</p>
+<p>Key-Value Coding 使用起来非常方便，但性能上要差于直接调用 Getter/Setter，所以如果能避免 KVC 而用 Getter/Setter 代替，性能会有较大提升。</p>
+</li>
+<li><p>避免 Getter/Setter 调用</p>
+<p>如果能直接访问 ivar，则尽量使用 ivar 而不要使用 Getter/Setter 这样也能节省一部分开销。</p>
+</li>
+<li><p>避免多余的内存管理方法</p>
+<p>在 ARC 条件下，默认声明的对象是 <strong>strong 类型的，赋值时有可能会产生 retain/release 调用，如果一个变量在其生命周期内不会被释放，则使用 </strong>unsafe_unretained 会节省很大的开销。</p>
+<p>访问具有 <strong>weak 属性的变量时，实际上会调用 objc_loadWeak() 和 objc_storeWeak() 来完成，这也会带来很大的开销，所以要避免使用 </strong>weak 属性。</p>
+<p>创建和使用对象时，要尽量避免对象进入 autoreleasepool，以避免额外的资源开销。</p>
+</li>
+<li><p>遍历容器类时，选择更高效的方法</p>
+<p>相对于 Foundation 的方法来说，CoreFoundation 的方法有更高的性能，用 CFArrayApplyFunction() 和 CFDictionaryApplyFunction() 方法来遍历容器类能带来不少性能提升，但代码写起来会非常麻烦。</p>
+</li>
+<li><p>尽量用纯 C 函数、内联函数</p>
+<p>使用纯 C 函数可以避免 ObjC 的消息发送带来的开销。如果 C 函数比较小，使用 inline 可以避免一部分压栈弹栈等函数调用的开销。</p>
+</li>
+<li><p>减少遍历的循环次数</p>
+<p>在 JSON 和 Model 转换前，Model 的属性个数和 JSON 的属性个数都是已知的，这时选择数量较少的那一方进行遍历，会节省很多时间。</p>
+</li>
+</ol>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://yoursite.com/2017/05/12/yymodel/" data-id="cj2lib23d0004c5t91b9g7z3i" class="article-share-link">分享</a><div class="tags"><a href="/tags/iOS/">iOS</a></div><div class="post-nav"><a href="/2016/05/26/tuya-ios/" class="next">iOS远程实时涂鸦实现</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/记事/" style="font-size: 15px;">记事</a> <a href="/tags/iOS/" style="font-size: 15px;">iOS</a> <a href="/tags/绘画/" style="font-size: 15px;">绘画</a> <a href="/tags/socket/" style="font-size: 15px;">socket</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/12/yymodel/">YYModel</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/tuya-ios/">iOS远程实时涂鸦实现</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/19/blog-start/">博客开始</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.haomwei.com/" title="屠夫" target="_blank">屠夫</a><ul></ul><a href="https://onevcat.com/page/2/#blog" title="喵神" target="_blank">喵神</a><ul></ul><a href="http://blog.ibireme.com/" title="ibireme" target="_blank">ibireme</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">Name'65.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
