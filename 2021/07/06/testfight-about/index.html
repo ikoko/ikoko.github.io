@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
 	<link rel="preconnect" href="//gravatar.loli.net">
 
-	<title>YYModel | 耳鸣</title>
+	<title>耳鸣 | 耳鸣</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -39,14 +39,14 @@
 
 	<meta property="og:site_name" content="耳鸣">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="YYModel | 耳鸣">
+	<meta property="og:title" content="耳鸣 | 耳鸣">
 	<meta property="og:description" content="">
-	<meta property="og:url" content="http://yoursite.com/2017/05/12/yymodel/">
+	<meta property="og:url" content="http://yoursite.com/2021/07/06/testfight-about/">
 
 	
-	<meta property="article:published_time" content="2017-05-12T15:05:00+08:00"> 
+	<meta property="article:published_time" content="2021-07-06T11:07:76+08:00"> 
 	<meta property="article:author" content="Will65">
-	<meta property="article:published_first" content="耳鸣, /2017/05/12/yymodel/">
+	<meta property="article:published_first" content="耳鸣, /2021/07/06/testfight-about/">
 	
 
 	
@@ -136,120 +136,25 @@
     <div class="inner">
         <header class="post-full-header">
             <div class="post-full-meta">
-                <time class="post-full-meta-date" datetime="2017-05-12T07:12:34.000Z">
-                    2017-05-12
+                <time class="post-full-meta-date" datetime="2021-07-06T03:26:20.763Z">
+                    2021-07-6
                 </time>
                 
                 <span class="date-divider">/</span>
                 
                 
             </div>
-            <h1 class="post-full-title">YYModel</h1>
+            <h1 class="post-full-title"></h1>
         </header>
         <div class="post-full no-image">
             
             <div class="post-full-content">
                 <article id="photoswipe" class="markdown-body">
-                    <h3 id="YYModel"><a href="#YYModel" class="headerlink" title="YYModel"></a>YYModel</h3><ul>
-<li><p>Github：<a href="https://github.com/ibireme/YYModel" target="_blank" rel="external">YYModel</a></p>
-</li>
-<li><p>作者： <a href="http://blog.ibireme.com/" target="_blank" rel="external">ibireme</a></p>
-</li>
-<li><p>功能：高性能的 iOS JSON 模型框架，将JSON格式数据自动映射成Model</p>
-</li>
-</ul>
-<p>​<a id="more"></a></p>
-<h3 id="YYModel_u7684_u7279_u6027"><a href="#YYModel_u7684_u7279_u6027" class="headerlink" title="YYModel的特性"></a>YYModel的特性</h3><ul>
-<li><strong>高性能</strong>: 模型转换性能接近手写解析代码。</li>
-<li><strong>自动类型转换</strong>: 对象类型可以自动转换。</li>
-<li><strong>类型安全</strong>: 转换过程中，所有的数据类型都会被检测一遍，以保证类型安全，避免崩溃问题。</li>
-<li><strong>无侵入性</strong>: 使用Category，模型无需继承自其他基类。</li>
-<li><strong>轻量</strong>: 该框架只有 5 个文件 (包括.h文件)。</li>
-<li><strong>文档和单元测试</strong>: 文档覆盖率100%, 代码覆盖率99.6%。</li>
-</ul>
-<h3 id="u4E3B_u6D41Model_u5E93_u6027_u80FD_u5BF9_u6BD4"><a href="#u4E3B_u6D41Model_u5E93_u6027_u80FD_u5BF9_u6BD4" class="headerlink" title="主流Model库性能对比"></a>主流Model库性能对比</h3><table>
-<thead>
-<tr>
-<th></th>
-<th>性能</th>
-<th>容错性</th>
-<th>功能</th>
-<th>侵入性</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Mantle</strong></td>
-<td>E</td>
-<td>B 会进行对象类型检查</td>
-<td>A 可定制性最高</td>
-<td>B 需要 Model 继承自某个基类，灵活性稍差，但功能丰富</td>
-</tr>
-<tr>
-<td><strong>JSONModel</strong></td>
-<td>C 和 MJExtension 差不多，Mantle 性能高</td>
-<td>D 没有对错误类型的检测，没有对 App 的保护</td>
-<td>B 使用比较简单，但功能相对 Mantle 稍弱</td>
-<td>B 需要 Model 继承自某个基类，灵活性稍差，但功能丰富</td>
-</tr>
-<tr>
-<td><strong>MJExtension</strong></td>
-<td>C 和JSONModel 差不多，Mantle 性能高</td>
-<td>C 对部分对象进行自动转换</td>
-<td>B 使用比较简单，但功能相对 Mantle 稍弱</td>
-<td>A- Category 方式来实现,添加了一些没有前缀的方法，易引起冲突</td>
-</tr>
-<tr>
-<td><strong>FastEasyMapping</strong></td>
-<td>B 较快</td>
-<td>E 没有自动转换的机制</td>
-<td>C 功能最少，使用也不算方便</td>
-<td>C 采用工具类来实现，使用灵活，但不方便</td>
-</tr>
-<tr>
-<td><strong>YYModel</strong></td>
-<td>A 快，接近手写代码的效率</td>
-<td>A 会进行对象类型检查</td>
-<td>B 使用比较简单，但功能相对 Mantle 稍弱</td>
-<td>A Category 方式来实现</td>
-</tr>
-</tbody>
-</table>
-<h3 id="YYModel_u6027_u80FD_u662F_u5982_u4F55_u63D0_u5347_u7684_uFF1F"><a href="#YYModel_u6027_u80FD_u662F_u5982_u4F55_u63D0_u5347_u7684_uFF1F" class="headerlink" title="YYModel性能是如何提升的？"></a>YYModel性能是如何提升的？</h3><ol>
-<li><p>缓存</p>
-<p>Model JSON 转换过程中需要很多类的元数据，如果数据足够小，则全部缓存到内存中。</p>
-</li>
-<li><p>查表</p>
-<p>当遇到多项选择的条件时，要尽量使用查表法实现，比如 switch/case，C Array，如果查表条件是对象，则可以用 NSDictionary 来实现。</p>
-</li>
-<li><p>避免 KVC</p>
-<p>Key-Value Coding 使用起来非常方便，但性能上要差于直接调用 Getter/Setter，所以如果能避免 KVC 而用 Getter/Setter 代替，性能会有较大提升。</p>
-</li>
-<li><p>避免 Getter/Setter 调用</p>
-<p>如果能直接访问 ivar，则尽量使用 ivar 而不要使用 Getter/Setter 这样也能节省一部分开销。</p>
-</li>
-<li><p>避免多余的内存管理方法</p>
-<p>在 ARC 条件下，默认声明的对象是 <strong>strong 类型的，赋值时有可能会产生 retain/release 调用，如果一个变量在其生命周期内不会被释放，则使用 </strong>unsafe_unretained 会节省很大的开销。</p>
-<p>访问具有 <strong>weak 属性的变量时，实际上会调用 objc_loadWeak() 和 objc_storeWeak() 来完成，这也会带来很大的开销，所以要避免使用 </strong>weak 属性。</p>
-<p>创建和使用对象时，要尽量避免对象进入 autoreleasepool，以避免额外的资源开销。</p>
-</li>
-<li><p>遍历容器类时，选择更高效的方法</p>
-<p>相对于 Foundation 的方法来说，CoreFoundation 的方法有更高的性能，用 CFArrayApplyFunction() 和 CFDictionaryApplyFunction() 方法来遍历容器类能带来不少性能提升，但代码写起来会非常麻烦。</p>
-</li>
-<li><p>尽量用纯 C 函数、内联函数</p>
-<p>使用纯 C 函数可以避免 ObjC 的消息发送带来的开销。如果 C 函数比较小，使用 inline 可以避免一部分压栈弹栈等函数调用的开销。</p>
-</li>
-<li><p>减少遍历的循环次数</p>
-<p>在 JSON 和 Model 转换前，Model 的属性个数和 JSON 的属性个数都是已知的，这时选择数量较少的那一方进行遍历，会节省很多时间。</p>
-</li>
-</ol>
+                    <p>title: 关于 iOS TestFight<br>date: 2020-01-12 15:12:34<br>tags: iOS</p>
+<p><img alt="testfight" class="post-img b-lazy" data-img="https://will-pic.oss-cn-beijing.aliyuncs.com/uPic/2021/8Ifg8f.png" data-index="0" data-src="https://will-pic.oss-cn-beijing.aliyuncs.com/uPic/2021/8Ifg8f.png"></p>
 
                 </article>
                 <ul class="tags-postTags">
-                    
-                    <li>
-                        <a href="/tags/iOS/" rel="tag"># iOS</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -261,8 +166,8 @@
         
         <span class="prev-next-post">·</span>
         
-        <a class="next-post" title="iOS远程实时涂鸦实现" href="/2016/05/26/tuya-ios/">
-            iOS远程实时涂鸦实现 →
+        <a class="next-post" title="" href="/2021/07/06/yymodel/">
+             →
         </a>
         
     </nav>
@@ -288,7 +193,7 @@
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#YYModel"><span class="toc-text">YYModel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YYModel_u7684_u7279_u6027"><span class="toc-text">YYModel的特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u4E3B_u6D41Model_u5E93_u6027_u80FD_u5BF9_u6BD4"><span class="toc-text">主流Model库性能对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YYModel_u6027_u80FD_u662F_u5982_u4F55_u63D0_u5347_u7684_uFF1F"><span class="toc-text">YYModel性能是如何提升的？</span></a></li></ol>
+        
     </div>
 </div>
 
@@ -390,7 +295,13 @@
       
       
       <li>
-        <a href="/2017/05/12/yymodel/">YYModel</a>
+        <a href="/2021/07/06/testfight-about/"></a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2021/07/06/yymodel/"></a>
       </li>
       
       
@@ -400,10 +311,6 @@
       </li>
       
       
-      
-      <li>
-        <a href="/2016/01/19/blog-start/">博客开始</a>
-      </li>
       
       
       
@@ -429,7 +336,7 @@
 		<h3 class="read-next-card-header-title">标签云</h3>
 	</header>
 	<div class="read-next-card-content-ext">
-		<a href="/tags/iOS/" style="font-size: 24px;">iOS</a> <a href="/tags/socket/" style="font-size: 14px;">socket</a> <a href="/tags/绘画/" style="font-size: 14px;">绘画</a> <a href="/tags/记事/" style="font-size: 14px;">记事</a>
+		<a href="/tags/iOS/" style="font-size: 14px;">iOS</a> <a href="/tags/socket/" style="font-size: 14px;">socket</a> <a href="/tags/绘画/" style="font-size: 14px;">绘画</a> <a href="/tags/记事/" style="font-size: 14px;">记事</a>
 	</div>
 </article>
 
@@ -462,7 +369,7 @@
 			<a href="/" title="耳鸣">耳鸣 © 2021</a>
 			
 				
-			        <span hidden="true" id="/2017/05/12/yymodel/" class="leancloud-visitors" data-flag-title="YYModel">
+			        <span hidden="true" id="/2021/07/06/testfight-about/" class="leancloud-visitors" data-flag-title="">
 			            <span>阅读量 </span>
 			            <span class="leancloud-visitors-count">0</span>
 			        </span>
